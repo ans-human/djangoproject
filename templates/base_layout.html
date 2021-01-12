@@ -8,6 +8,9 @@
     <title>Articles</title>
 </head>
 <body>
+    <header class="wrapper">
+        <h1><a href="{% url 'articles:list' %}" ><img style="height: 5rem;" src="{% static 'logo.svg'%}" /></a></h1>
+    </header>
     <div class='wrapper'>
         {% block content %}
         {% endblock %}
