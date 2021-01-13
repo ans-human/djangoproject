@@ -11,6 +11,13 @@ a, a:hover, a:visited{
     text-decoration: none;
 }
 
+.wrapper {
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .container {
     margin: 1rem;
     padding: 1rem;
