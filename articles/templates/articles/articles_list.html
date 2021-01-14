@@ -6,8 +6,9 @@
         {%for article in articles%}
         <div>
             <h2><a href="{% url 'articles:detail' article.slug %}">{{article.title}} </a> </h2>
-            <p>{{ article.date }}</p>
             <p>{{article.snippet}}</p>
+            <p>{{article.author}}</p>
+            <small>{{ article.date }}</small>
         </div>
         {%endfor%}
     </div>
