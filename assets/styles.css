@@ -190,7 +190,7 @@ nav button{
 .site-form button{
     width:100px;
     color:black;
-    background-color:var(--highlight);
+    background-color:#ffe900;
     border:none;
     padding:10px;
     border-radius:2px;
