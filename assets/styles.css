@@ -38,6 +38,16 @@ a, a:hover, a:visited{
     justify-content:center;
 }
 
+.wrapper{
+    box-sizing: border-box;
+    margin:0 auto 2rem;
+    max-width: 960px;
+}
+
+.header-color{
+    background-color:var(--highlight);
+}
+
 div.wrapper h1,div.container h1{
     margin: 2rem 2rem;
     text-align:center;
@@ -46,11 +56,10 @@ div.wrapper h1,div.container h1{
 }
 
 header {
-    background-color:var(--highlight);
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding:0rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom:1rem 2rem;
 }
 
 nav {
@@ -88,7 +97,7 @@ nav button{
 
 .articles{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 .article{
     margin: 2rem;
