@@ -97,7 +97,7 @@ nav button{
 
 .articles{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 .article{
     margin: 2rem;
