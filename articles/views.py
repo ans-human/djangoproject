@@ -30,12 +30,20 @@ class article_create(CreateView):
     model = Article
     form_class = forms.CreateArticle
     template_name = 'articles/article_create.html'
+    def post(self, request):
+        form = forms.CreateArticle(request.POST, request.FILES)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.author = request.user
+            instance.save()
+            return redirect('articles:list')
         
 class article_update(UpdateView):
     model = Article
     slug_url_kwarg = 'slug'
     form_class = forms.CreateArticle
     template_name = 'articles/article_update.html'
+
 
 class article_delete(DeleteView):
     model = Article
