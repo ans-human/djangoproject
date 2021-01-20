@@ -169,7 +169,7 @@ nav button{
     /* border:1px solid var(--dark-gray); */
     padding:1rem;
     border-radius:.2rem;
-    width:60vw;
+    width: 80vw;
     max-width: 500px;
     background-color: #424242;
     box-shadow: 0.1rem .1rem .5rem black;

@@ -6,6 +6,12 @@
     <h2>{{ article.title }}</h2>
     <p>{{ article.body }}</p>
     <small>{{ article.date }}</small>
+    <br>
+    <br>    
+    {% if user.id == article.author.id %}
+        <small><a href="{% url 'articles:update' slug=article.slug%}" style="color: white;">[Edit]</a></small>
+        <small><a href="{% url 'articles:delete' slug=article.slug%}" style="color: white;">[Delete]</a></small>
+    {% endif %}
 </div>
 
 {% endblock %}
